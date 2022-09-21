@@ -9,13 +9,11 @@ int main()
 
   int array[size];
 
-  //Take input in the array
   printf("Enter %d element in the array \n",size);
   for(int i=0; i<size; i++){
     scanf("%d",&array[i]);
   }
 
-  //Output original array
   printf("Original Array \n");
   for(int i=0; i<size; i++){
     printf("%d ",array[i]);
@@ -23,10 +21,8 @@ int main()
   printf("\n");
 
  
-  //iterate through each element
   for(int i=0; i<size-1; i++){
     
-    //compare it with all elements on right
     for(int j=i+1; j<size; j++){
       if(array[i] == array[j]){
         /*
